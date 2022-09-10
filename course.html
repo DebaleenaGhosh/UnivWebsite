@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+    <!----------Course-------->
+    <section class="course">
+        <p></p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Diploma in Engineering Diploma in Hotel Management Diploma in Journalism Diploma in Psychology Diploma in Digital Marketing
+                    Diploma in Fine Arts Diploma in English Diploma in Graphic Designing Diploma in Web Development Diploma in Web Designing
+                    Diploma in Game Designing</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Bachelor of Business Administration Bachelor of Management Science Bachelor of Fine Arts Bachelor of Event Managemen
+                    Aeronautical Engineering Automobile Engineering Civil Engineering Computer Science and Engineering Biotechnology Engineering
+                    Electrical and Electronics Engineering Electronics and Communication Engineering Automation and Robotics 
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduation</h3>
+                <p>Master of Arts Master of Science Master of Research Master by Research Master of Studies Master of Business Administration
+                    Master of Library Science Master of Public Administration</p>
+            </div>
+        </div>
+    </section>
+    <!---------Facilities--------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p></p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Images/library.png">
+                <h3>World Class Library</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="Images/basketball.png">
+                <h3>Largest Play Ground</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="Images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+            </div>
+        </div>
+    </section>
+    <!--------Footer-------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>St Xaviers University is a self-financed public research university 
+            established in the year 1990 in Kolkata,West Bengal,India.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </section>
+    <!-------Javascript for toggle menu------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
